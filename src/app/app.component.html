@@ -1,0 +1,24 @@
+<label>Normal: </label>
+<select [(ngModel)]="selectedValue0">
+  <option *ngFor="let item of someStringEnumValues" [value]="item"
+    >{{item}}</option
+  >
+</select>
+<label> => {{selectedValue0}}</label>
+<br/>
+<label>Translated: </label>
+<select [(ngModel)]="selectedValue1">
+  <option *ngFor="let item of someStringEnumValues" [value]="item"
+    >{{item | translate}}</option
+  >
+</select>
+<label> => {{selectedValue1}}</label>
+<br/>
+<label>Custom & Translated: </label>
+<select [(ngModel)]="selectedValue2">
+  <option *ngFor="let item of someCustomStringEnumValues" [value]="item"
+    >{{item | translate}}</option
+  >
+</select>
+<label> => {{selectedValue2}}</label>
+<br/>
