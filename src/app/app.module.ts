@@ -8,6 +8,6 @@ import { TranslatePipe } from './translate.pipe';
 @NgModule({
   imports: [BrowserModule, FormsModule],
   declarations: [AppComponent, TranslatePipe],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
